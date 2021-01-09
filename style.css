@@ -39,6 +39,28 @@ a{
 .right-side li{
     margin-left: 30px;
 }
+.right-side > li > form{
+    border: 1px solid #ccc;
+}
+
+.right-side > li > form> input{
+    padding: .6rem;
+    border: none;
+    margin:0;
+    outline: none;
+}
+
+.right-side > li > form > button{
+    padding: .6rem;
+    border: 0;
+    margin:0;
+    outline:none;
+    cursor:pointer;
+}
+
+.right-side > li > form > button > i{
+    background-color:none;
+}
 
 .gloify-button{
     padding: 5px 10px;
@@ -126,6 +148,7 @@ a{
     display: flex;
     flex-direction: column;
     background-color: #fff;
+    border-radius: 3px;
 }
 .product-area > .box1 > a{
     display: flex;
@@ -157,7 +180,7 @@ a{
 }
 
 .product-area > .box1 > form{
-    color:#aaa;
+    color:#666;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -204,11 +227,12 @@ a{
 /* box2 */
 
 .product-area > .box2{
-    background-color: #fff; 
+    background-color: #fff;
+    border-radius: 3px;
 }
 
 .product-area > .box2 > div{
-    padding:15px 10px;    
+    padding:1.5rem 1rem;    
 }
 
 .product-area > .box2 > div > .images{
@@ -237,10 +261,11 @@ a{
 
 .product-area > .box3{
     background-color: #fff;
+    border-radius: 3px;
 }
 
 .product-area > .box3 > div{
-    padding: 20px 15px;
+    padding: 1.5rem 1rem;
 }
 
 .product-area > .box3 > div >  form{
@@ -251,7 +276,7 @@ a{
 
 .product-area > .box3 > div >  form > label{
     margin-top:1rem;
-    color: #ccc;
+    color: #666;
 
 }
 
@@ -263,10 +288,11 @@ a{
 .product-area > .box4{
     background-color: #fff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 3px;
 } 
 
 .product-area > .box4 > div{
-    padding: 20px 10px;
+    padding: 1.5rem 1rem;
 }
 
 .product-area > .box4 > div > nav{
@@ -432,12 +458,18 @@ a{
 
 .quantity-area{
      background-color: #fff;
-     padding: 2rem 1rem;
      display: grid;
-     grid-template-rows: .1fr .1fr .1fr;
-     /* grid-auto-rows: minmax(300px, auto); */
-}
+     grid-template-rows: .1fr .1fr .1fr .1fr;
+     background-color: #eee;
+    }
 
+.quantity-area > div{
+     background-color: #fff;
+     padding: 2rem 1rem;
+     border-radius: 3px;
+
+     /* background-color: #ccc; */
+}
 .quantity-area > .quantity > form{
     display: grid;
     grid-template-columns: 1fr;
@@ -445,7 +477,7 @@ a{
     margin-top: 1rem;
 }
 .quantity-area > .quantity > form > label{
-    color:#333;
+    color:#666;
     margin-bottom: 2px;
 }
 
@@ -459,8 +491,6 @@ a{
 	background-repeat: no-repeat, repeat;
 	background-position: right .7em top 50%, 0 0;
 	background-size: .65em auto, 100%;
-
-
 }
 
 
@@ -471,7 +501,6 @@ a{
 
 .quantity-area > .pricing > h3{
     margin-bottom: .2rem;
-    margin-top: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .quantity-area > .pricing > form{
@@ -482,6 +511,7 @@ a{
 .quantity-area > .pricing > form > label{
     margin-bottom: 2px;
     margin-top: 1rem;
+    color:#666;
 }
 .quantity-area > .pricing > form > input{
     padding: 10px;
@@ -495,7 +525,38 @@ a{
     padding: 5px;
 }
 
+.quantity-area > .product-details > form{
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
+.quantity-area > .product-details > form > label{
+    margin: 1.5rem 0 .2rem;
+    color:#666;
+}
+
+.quantity-area > .product-details > form > select{
+    padding: .7rem;
+}
+
+.quantity-area > .product-details > form > input{
+    padding: .7rem;
+}
+
+.quantity-area > .tags > form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: .2rem;
+}
+
+.quantity-area > .tags > form > label{
+    margin-top: 1.5rem;
+    color:#666;
+
+}
+.quantity-area > .tags > form > input{
+    padding: 10px;
+}
 /*  */
 input{
     outline-color: skyblue;
@@ -507,6 +568,5 @@ input{
 }
 
 h3{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
