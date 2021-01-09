@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <title>inventSuite</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top-nav">
+            <div class="left-side">
+                <li>
+                    <a><img src="image/brand-image.png"  width="100px" alt=""></a>
+                </li>
+            </div>
+            <div class="right-side">
+                <li>
+                    <a>
+                        <button class="gloify-button">
+                            <img src="image/Gloify-logo.jpg" width="40px" alt="">
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a><i class="fas fa-bell fa-lg"></i></a>
+                </li>
+                <li>
+                    <a>
+                        <img src="image/profile-image.jpg" width="60px" 
+                            style="border-radius: 50%; height: 40px; width:40px;" alt="">
+                    </a>
+                </li>
+            </div>            
+        </div>
+        <div class="section-area">
+            <div class="side-bar">
+                <ul>
+                <li class="active">
+                    <a href="#home" style="color:tomato">
+                        <i class="fas fa-home-alt"></i>
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#order">
+                        <i class="fas fa-cart-arrow-down"></i>
+                        <p>Order</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#product">
+                        <i class="fab fa-intercom"></i>
+                        <p>Product</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#customers">
+                        <i class="fas fa-users"></i>
+                        <p>Customer</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#warehouse">
+                        <i class="fas fa-warehouse-alt"></i>
+                        <p>Warehouse</p>
+                    </a>
+                </li>
+                </ul>
+            </div>
+            <div class="product-section">
+                <div class="product-area">
+                    <div class="box1">
+                        <a>
+                            <i class="fas fa-chevron-left fa-xs"></i>
+                            <p>Product</p>
+                        </a>
+                        <h3>Add Product</h3>
+                        <form>
+                            <label>First Name</label>
+                            <input type="text">
+                            <div class="description">
+                                <label>Description</label>
+                                <nav>
+                                    <i class="fas fa-bold"></i>
+                                    <i class="fas fa-italic"></i>
+                                    <i class="fas fa-underline"></i>
+                                    <i class="far fa-list-ol"></i>
+                                    <i class="far fa-list"></i>
+                                </nav>
+                                <textarea cols="30" rows="5" name="textarea"> 
+
+                                </textarea>
+                            </div> 
+                        </form>  
+                    </div>
+                    <div class="box2">
+                    <div>
+                        <h3>Add Product</h3>
+                        <div class="images">
+                            <img src="image/image1.jpg" alt="">
+                            <img src="image/image3.jpg" alt="">
+                            <img src="image/image4.jpg" alt="">
+                            <img src="image/image5.jpg" alt="">
+                            <img src="image/image6.png" alt="">
+                            <img src="image/image2.webp" alt="">
+                            <button>
+                                <img src="image/add-image.webp" alt="">
+                            </button>
+                        </div>
+                    </div> 
+                    </div>
+                    <div class="box3">
+                        <div>
+                            <h3>Inventory</h3>
+                            <form>
+                                <label>SKU(Stock Kepping Unit)</label>
+                                <input type="text">
+                                <label>Barcode(ISBN, UPC, GTIN, etc.)</label>
+                                <input type="text">
+                            </form>
+                        </div>
+                    </div> 
+                    <div class="box4">
+                        <div class="varient">
+                            <nav>
+                                <h3>Verient</h3>
+                                <label class="container">
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                    <p>This product has multiply varient</p>
+                                </label>
+                            </nav>
+                            <section>
+                                <nav>
+                                    <p>Option1</p>
+                                    <i class="far fa-trash-alt fa-lg"></i>
+                                </nav>
+                                <div>
+                                    <form action="#">
+                                        <select class="select-css" id="quentity" name="quentity">
+                                          <option value="Size">Size</option>
+                                          <option value="1">size-large</option>
+                                          <option value="2">size-medium</option>
+                                          <option value="3">size-small</option>
+                                        </select>
+                                    </form>
+                                    <textarea name="" id="" cols="30" rows="10">
+                                        
+                                    </textarea>
+                                    <form action="#">
+                                        <select class="select-css" id="quentity" name="quentity">
+                                          <option value="Color">Color</option>
+                                          <option value="1">color-red</option>
+                                          <option value="2">color-yellow</option>
+                                          <option value="3">color-blue</option>
+                                        </select>
+                                    </form>
+                                    <input type="text">
+                                    <p></p>
+                                    <a href="#">+ Add  another option</a>
+                                </div>
+                            </section>
+                      
+                        </div>
+                        <div class="verient-details">
+                            <h3>Varient Details</h3>
+                            <nav>
+                                <ul>
+                                    <li>Varient</li>
+                                    <li>Price</li>
+                                    <li>Vendor</li>
+                                    <li>Quality</li>
+                                    <li>SKU</li>
+                                </ul>
+                            </nav>
+                            <ul>
+                                <li>
+                                    <img src="image/image-button.png"  alt="">
+                                    <p>44</p>
+                                </li>
+                                <li>
+                                    <input type="text">
+                                </li>
+                                <li>
+                                    <input type="text">
+                                </li>
+                                <li>
+                                    <form action="#">
+                                        <select id="quentity" name="quentity">
+                                          <option value=""></option>
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                        </select>
+                                    </form>
+                                </li>
+                                <li>
+                                    <input type="text">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <img src="image/image-button.png"  alt="">
+                                    <p>44</p>
+                                </li>
+                                <li>
+                                    <input type="text">
+                                </li>
+                                <li>
+                                    <input type="text">
+                                </li>
+                                <li>
+                                    <form action="#">
+                                        <select id="quentity" name="quentity">
+                                          <option value=""></option>
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                        </select>
+                                    </form>
+                                </li>
+                                <li>
+                                    <input type="text">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <img src="image/image-button.png"  alt="">
+                                    <p>44</p>
+                                </li>
+                                <li>
+                                    <input type="text">
+                                </li>
+                                <li>
+                                    <input type="text">
+                                </li>
+                                <li>
+                                    <form action="#">
+                                        <select class="select-css" id="quentity" name="quentity">
+                                          <option value=""></option>
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                        </select>
+                                    </form>
+                                </li>
+                                <li>
+                                    <input type="text">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="quantity-area">
+                    <div class="quantity">
+                        <h3>Quentity</h3>
+                        <form action="">
+                            <label for="">Available</label>
+                            <select id="quentity" name="quentity">
+                                <option value="Qty">Qty</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                              </select>
+                        </form>
+                    </div>
+                    <div class="pricing">
+                        <h3>Pricing</h3>
+                        <form action="">
+                            <label for="">Pricing</label>
+                            <input type="text">
+                            <label for="">Cost per item</label>
+                            <input type="text">
+                            <label class="container">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                                <p>Change Tax on this product</p>
+                            </label>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(textarea)[0].setSelectionRange(0, 0);
+    $(textarea).focus();
+
+</script>
+
+</html>
